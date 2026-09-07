@@ -5,38 +5,43 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // TODO 1: Change the background color to a light grey (e.g., Colors.grey[200])
-        
-        
+        // TODO 1: Light grey background
+        backgroundColor: Colors.grey[200],
+
         appBar: AppBar(
           title: const Text("Fonts & Colors Lab"),
           centerTitle: true,
-          // TODO 2: Set the AppBar background color to a dark blue (e.g., Colors.blue[800])
-          
+
+          // TODO 2: Dark blue AppBar
+          backgroundColor: Colors.blue[800],
         ),
-        
+
         body: const Center(
           child: Text(
             "This is the body section",
-            // TODO 3: Apply a TextStyle to this Text widget to match the requirements:
-            // - Set the fontSize to 20.0
-            // - Make the fontWeight bold
-            // - Add a letterSpacing of 2.0
-            // - Change the text color to Colors.red
-            // - Apply the custom font family "DancingScript" (ensure it matches pubspec.yaml)
+
+            // TODO 3: Text styling
             style: TextStyle(
-              // Add your styling properties here
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2.0,
+              color: Colors.red,
+              fontFamily: 'DancingScript',
             ),
           ),
         ),
-        
+
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             print("Button clicked!");
           },
-          // TODO 4: Set the FAB background color to match the AppBar (dark blue)
-       
-          child: const Center(child: Text("Click")),
+
+          // TODO 4: Dark blue button
+          backgroundColor: Colors.blue[800],
+
+          child: const Center(
+            child: Text("Click"),
+          ),
         ),
       ),
     ),
